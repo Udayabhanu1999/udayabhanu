@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Appssdc registration form</string>
+    <string-array name="branches">
+
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>Mech</item>
+        <item>EEE</item>
+        <item>Civil</item>
+        <item>IT</item>
+        <item>Chemical</item>
+        <item>Metallurgy</item>
+        <item>EE</item>
+
+
+    </string-array>
+</resources>

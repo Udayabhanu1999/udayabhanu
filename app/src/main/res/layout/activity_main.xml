@@ -1,0 +1,206 @@
+<ScrollView android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:text="Student Registration Form"
+       android:layout_marginTop="25dp"
+       android:textColor="#FA3E7E"
+       android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Roll Number"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:textColor="#009688"
+        android:gravity="left"
+        android:layout_margin="20dp" />
+
+
+    <EditText
+        android:id="@+id/rollno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Roll Number"
+        android:layout_margin="20dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name of the Candidate"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#009688"
+        android:gravity="left"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name of Candidate"
+        android:layout_margin="20dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name of the College"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#009688"
+        android:gravity="left"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/college"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name of College"
+        android:layout_margin="20dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mail ID"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#009688"
+        android:gravity="left"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/mailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mail Id"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#009688"
+        android:gravity="left"
+        android:layout_margin="20dp" />
+
+
+ <EditText
+     android:drawableLeft="@drawable/ic_baseline_lock_24"
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:hint="Password"
+     android:inputType="number"
+     android:maxLength="7"
+     android:textColorHint="#3F51B5"
+     android:layout_margin="20dp"
+     />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone number"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#009688"
+        android:gravity="left"
+        android:layout_margin="20dp" />
+
+    <EditText
+        android:id="@+id/phoneno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="#009688"
+        android:gravity="left"
+        android:layout_margin="20dp" />
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+
+  <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      >
+
+   <RadioButton
+       android:id="@+id/male"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Male"
+       android:textSize="20sp"/>
+   <RadioButton
+       android:id="@+id/female"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Female"
+       android:textSize="20sp"/>
+
+  </RadioGroup>
+ </LinearLayout>
+
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Select the Branch"
+     android:textSize="25sp"
+     android:textColor="@color/colorPrimary"/>
+ <Spinner
+     android:id="@+id/sp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:entries="@array/branches" />
+
+
+    <Button
+        android:onClick="movescreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Displaydata"
+        android:textColor="#9C27B0"
+        android:background="#FFEB3B"/>
+     />
+
+ <TextView
+     android:id="@+id/tv"
+     android:textSize="25sp"
+     android:textColor="@color/colorPrimary"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>
+
+    </ScrollView>
